@@ -1,0 +1,20 @@
+# OpenLane runs
+runs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Simulation temporary files
+*.vvp
+simulation.out
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
