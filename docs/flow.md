@@ -1,4 +1,4 @@
-OPENLANE + OPENROAD + SKY130 GENERAL COMMAND REFERENCE
+# OPENLANE + OPENROAD + SKY130 GENERAL COMMAND REFERENCE
  
 
 PURPOSE
@@ -17,7 +17,7 @@ Notation:
 
 
  
-1. HOST TERMINAL: GO TO OPENLANE
+## 1. HOST TERMINAL: GO TO OPENLANE
  
 
 TYPE:
@@ -36,7 +36,7 @@ EXAMPLE:
 
 
  
-2. HOST TERMINAL: ENABLE DOCKER X11 ACCESS
+## 2. HOST TERMINAL: ENABLE DOCKER X11 ACCESS
  
 
 TYPE:
@@ -59,7 +59,7 @@ NOTE:
 
 
  
-3. HOST TERMINAL: START OPENLANE CONTAINER
+## 3. HOST TERMINAL: START OPENLANE CONTAINER
  
 
 TYPE:
@@ -80,7 +80,7 @@ EXAMPLE:
 
 
  
-4. CONTAINER: CHECK CURRENT DIRECTORY
+## 4. CONTAINER: CHECK CURRENT DIRECTORY
  
 
 TYPE:
@@ -103,7 +103,7 @@ EXPECTED:
 
 
  
-5. CONTAINER: CHECK OPENLANE VERSION
+## 5. CONTAINER: CHECK OPENLANE VERSION
  
 
 TYPE:
@@ -122,7 +122,7 @@ EXAMPLE:
 
 
  
-6. CONTAINER: LIST AVAILABLE DESIGNS
+## 6. CONTAINER: LIST AVAILABLE DESIGNS
  
 
 TYPE:
@@ -141,7 +141,7 @@ EXAMPLE:
 
 
  
-7. CONTAINER: SET DESIGN VARIABLES
+## 7. CONTAINER: SET DESIGN VARIABLES
  
 
 TYPE:
@@ -167,7 +167,7 @@ NOTE:
 
 
  
-8. CONTAINER: FIND RTL FILES
+## 8. CONTAINER: FIND RTL FILES
  
 
 TYPE:
@@ -195,7 +195,7 @@ USE:
 
 
  
-9. CONTAINER: FIND TESTBENCH
+## 9. CONTAINER: FIND TESTBENCH
  
 
 TYPE:
@@ -220,7 +220,7 @@ EXAMPLE:
 
 
  
-10. CONTAINER: ENTER DESIGN DIRECTORY
+## 10. CONTAINER: ENTER DESIGN DIRECTORY
  
 
 TYPE:
@@ -239,7 +239,7 @@ EXAMPLE:
 
 
  
-11. RTL SIMULATION: COMPILE
+## 11. RTL SIMULATION: COMPILE
  
 
 TYPE:
@@ -268,7 +268,7 @@ IMPORTANT:
 
 
  
-12. RTL SIMULATION: RUN
+## 12. RTL SIMULATION: RUN
  
 
 TYPE:
@@ -286,9 +286,8 @@ EXAMPLE:
     vvp simulation.out
 
 
-------------------------------------------------------------
-EXTRA. OPENLANE CONTAINER
-------------------------------------------------------------
+## EXTRA. OPENLANE CONTAINER
+
 
 WHERE:
     OpenLane container
@@ -306,9 +305,7 @@ Check that RTL files exist:
     find src -type f \( -name "*.v" -o -name "*.sv" \) | sort
 
 
-------------------------------------------------------------
-EXTRA. YOSYS: GENERATE A HIERARCHICAL/MODULE DIAGRAM
-------------------------------------------------------------
+## EXTRA. YOSYS: GENERATE A HIERARCHICAL/MODULE DIAGRAM
 
 WHERE:
     OpenLane container
@@ -341,9 +338,7 @@ RESULT:
     vedic32_multiplier.dot
     
 
-------------------------------------------------------------
-EXTRA. GRAPHVIZ: CONVERT DOT TO PNG
-------------------------------------------------------------
+## EXTRA. GRAPHVIZ: CONVERT DOT TO PNG
 
 WHERE:
     Ubuntu HOST terminal
@@ -367,7 +362,7 @@ EXAMPLE:
     
 
  
-13. FIND VCD FILE
+## 13. FIND VCD FILE
  
 
 TYPE:
@@ -386,7 +381,7 @@ EXAMPLE:
 
 
  
-14. OPEN VCD IN GTKWAVE
+## 14. OPEN VCD IN GTKWAVE
  
 
 TYPE:
@@ -405,7 +400,7 @@ EXAMPLE:
 
 
  
-15. AUTOMATICALLY OPEN FIRST VCD FOUND
+## 15. AUTOMATICALLY OPEN FIRST VCD FOUND
  
 
 TYPE:
@@ -426,7 +421,7 @@ EXAMPLE:
 
 
  
-16. RUN COMPLETE OPENLANE FLOW
+## 16. RUN COMPLETE OPENLANE FLOW
  
 
 TYPE:
@@ -467,7 +462,7 @@ FLOW:
 
 
  
-17. INTERACTIVE OPENLANE FLOW
+## 17. INTERACTIVE OPENLANE FLOW
  
 
 TYPE:
@@ -496,7 +491,7 @@ NOTE:
 
 
  
-18. FIND RUN DIRECTORY
+## 18. FIND RUN DIRECTORY
  
 
 TYPE:
@@ -515,7 +510,7 @@ EXAMPLE:
 
 
  
-19. SET RUN DIRECTORY VARIABLE
+## 19. SET RUN DIRECTORY VARIABLE
  
 
 TYPE:
@@ -534,7 +529,7 @@ EXAMPLE:
 
 
  
-20. CHECK RUN SIZE
+## 20. CHECK RUN SIZE
  
 
 TYPE:
@@ -553,7 +548,7 @@ EXAMPLE:
 
 
  
-21. FIND FINAL GDS
+## 21. FIND FINAL GDS
  
 
 TYPE:
@@ -576,7 +571,7 @@ EXAMPLE:
 
 
  
-22. FIND FINAL DEF
+## 22. FIND FINAL DEF
  
 
 TYPE:
@@ -599,7 +594,7 @@ EXAMPLE:
 
 
  
-23. FIND FINAL LEF
+## 23. FIND FINAL LEF
  
 
 TYPE:
@@ -622,7 +617,7 @@ EXAMPLE:
 
 
  
-24. FIND FINAL NETLIST
+## 24. FIND FINAL NETLIST
  
 
 TYPE:
@@ -645,7 +640,7 @@ EXAMPLE:
 
 
  
-25. FIND FINAL SPEF
+## 25. FIND FINAL SPEF
  
 
 TYPE:
@@ -668,7 +663,7 @@ EXAMPLE:
 
 
  
-26. FIND FINAL SDF
+## 26. FIND FINAL SDF
  
 
 TYPE:
@@ -691,7 +686,7 @@ EXAMPLE:
 
 
  
-27. FIND FINAL SDC
+## 27. FIND FINAL SDC
  
 
 TYPE:
@@ -714,7 +709,7 @@ EXAMPLE:
 
 
  
-28. OPEN FINAL GDS IN KLAYOUT
+## 28. OPEN FINAL GDS IN KLAYOUT
  
 
 TYPE:
@@ -736,7 +731,7 @@ NOTE:
 
 
  
-29. START OPENROAD GUI
+## 29. START OPENROAD GUI
  
 
 TYPE:
@@ -755,7 +750,7 @@ EXAMPLE:
 
 
  
-30. LOAD FINAL ODB
+## 30. LOAD FINAL ODB
  
 
 TYPE:
@@ -774,7 +769,7 @@ EXAMPLE:
 
 
  
-31. FIT DESIGN IN OPENROAD
+## 31. FIT DESIGN IN OPENROAD
  
 
 TYPE:
@@ -793,7 +788,7 @@ EXAMPLE:
 
 
  
-32. SHOW OPENROAD GUI
+## 32. SHOW OPENROAD GUI
  
 
 TYPE:
@@ -812,7 +807,7 @@ EXAMPLE:
 
 
  
-33. CHECK AVAILABLE CLOCK OBJECTS
+## 33. CHECK AVAILABLE CLOCK OBJECTS
  
 
 TYPE:
@@ -831,7 +826,7 @@ EXAMPLE:
 
 
  
-34. READ LEF
+## 34. READ LEF
  
 
 TYPE:
@@ -850,7 +845,7 @@ EXAMPLE:
 
 
  
-35. READ LIBERTY
+## 35. READ LIBERTY
  
 
 TYPE:
@@ -869,7 +864,7 @@ EXAMPLE:
 
 
  
-36. READ NETLIST
+## 36. READ NETLIST
  
 
 TYPE:
@@ -888,7 +883,7 @@ EXAMPLE:
 
 
  
-37. LINK DESIGN
+## 37. LINK DESIGN
  
 
 TYPE:
@@ -907,7 +902,7 @@ EXAMPLE:
 
 
  
-38. READ SDC
+## 38. READ SDC
  
 
 TYPE:
@@ -926,7 +921,7 @@ EXAMPLE:
 
 
  
-39. READ SPEF
+## 39. READ SPEF
  
 
 TYPE:
@@ -945,7 +940,7 @@ EXAMPLE:
 
 
  
-40. SET INPUT ACTIVITY
+## 40. SET INPUT ACTIVITY
  
 
 TYPE:
@@ -973,7 +968,7 @@ NOTE:
 
 
  
-41. REPORT POWER
+## 41. REPORT POWER
  
 
 TYPE:
@@ -992,7 +987,7 @@ EXAMPLE:
 
 
  
-42. SETUP TIMING
+## 42. SETUP TIMING
  
 
 TYPE:
@@ -1011,7 +1006,7 @@ EXAMPLE:
 
 
  
-43. HOLD TIMING
+## 43. HOLD TIMING
  
 
 TYPE:
@@ -1030,7 +1025,7 @@ EXAMPLE:
 
 
  
-44. REPORT WNS
+## 44. REPORT WNS
  
 
 TYPE:
@@ -1049,7 +1044,7 @@ EXAMPLE:
 
 
  
-45. REPORT TNS
+## 45. REPORT TNS
  
 
 TYPE:
@@ -1068,7 +1063,7 @@ EXAMPLE:
 
 
  
-46. REPORT CLOCK PROPERTIES
+## 46. REPORT CLOCK PROPERTIES
  
 
 TYPE:
@@ -1087,7 +1082,7 @@ EXAMPLE:
 
 
  
-47. REPORT CLOCK SKEW
+## 47. REPORT CLOCK SKEW
  
 
 TYPE:
@@ -1106,7 +1101,7 @@ EXAMPLE:
 
 
  
-48. ANALYZE POWER GRID
+## 48. ANALYZE POWER GRID
  
 
 TYPE:
@@ -1125,7 +1120,7 @@ EXAMPLE:
 
 
  
-49. CHECK POWER GRID
+## 49. CHECK POWER GRID
  
 
 TYPE:
@@ -1144,7 +1139,7 @@ EXAMPLE:
 
 
  
-50. GENERATE POWER-GRID REPORT
+## 50. GENERATE POWER-GRID REPORT
  
 
 TYPE:
@@ -1167,7 +1162,7 @@ EXAMPLE:
 
 
  
-51. POWER HEATMAP
+## 51. POWER HEATMAP
  
 
 TYPE:
@@ -1184,14 +1179,8 @@ EXAMPLE:
 
     gui::set_heatmap Power rebuild
 
-NOTE:
-    We found this command functional in your OpenROAD build, but
-    the GUI heatmap should not be treated as the primary numerical
-    power result.
 
-
- 
-52. DUMP POWER HEATMAP
+## 52. DUMP POWER HEATMAP
  
 
 TYPE:
@@ -1210,7 +1199,7 @@ EXAMPLE:
 
 
  
-53. IR-DROP HEATMAP
+## 53. IR-DROP HEATMAP
  
 
 TYPE:
@@ -1227,13 +1216,8 @@ EXAMPLE:
 
     gui::set_heatmap IRDrop rebuild
 
-NOTE:
-    In your build, the numerical IR-drop reports were more useful
-    than the GUI IR heatmap.
-
-
  
-54. SHOW IR-DROP NUMBERS
+## 54. SHOW IR-DROP NUMBERS
  
 
 TYPE:
@@ -1252,7 +1236,7 @@ EXAMPLE:
 
 
  
-55. FIND DRC REPORTS
+## 55. FIND DRC REPORTS
  
 
 TYPE:
@@ -1275,7 +1259,7 @@ EXAMPLE:
 
 
  
-56. FIND LVS REPORTS
+## 56. FIND LVS REPORTS
  
 
 TYPE:
@@ -1298,7 +1282,7 @@ EXAMPLE:
 
 
  
-57. FIND POWER REPORTS
+## 57. FIND POWER REPORTS
  
 
 TYPE:
@@ -1321,7 +1305,7 @@ EXAMPLE:
 
 
  
-58. FIND ANTENNA REPORTS
+## 58. FIND ANTENNA REPORTS
  
 
 TYPE:
@@ -1342,7 +1326,7 @@ EXAMPLE:
 
 
  
-59. FIND IR-DROP REPORTS
+## 59. FIND IR-DROP REPORTS
  
 
 TYPE:
@@ -1406,7 +1390,7 @@ ERROR: Can't open input file `src/*.sv' for reading: No such file or directory
 
 
  
-60. SEARCH TIMING RESULTS
+## 60. SEARCH TIMING RESULTS
  
 
 TYPE:
@@ -1429,7 +1413,7 @@ EXAMPLE:
 
 
  
-61. CHECK ROUTING VIOLATIONS
+## 61. CHECK ROUTING VIOLATIONS
  
 
 TYPE:
@@ -1452,7 +1436,7 @@ EXAMPLE:
 
 
  
-62. READ METRICS CSV
+## 62. READ METRICS CSV
  
 
 TYPE:
@@ -1471,7 +1455,7 @@ EXAMPLE:
 
 
  
-63. SEARCH IMPORTANT METRICS
+## 63. SEARCH IMPORTANT METRICS
  
 
 TYPE:
@@ -1492,7 +1476,7 @@ EXAMPLE:
 
 
  
-64. CHECK DIE AREA FROM DEF
+## 64. CHECK DIE AREA FROM DEF
  
 
 TYPE:
@@ -1511,7 +1495,7 @@ EXAMPLE:
 
 
  
-65. SHOW FINAL RESULT DIRECTORY
+## 65. SHOW FINAL RESULT DIRECTORY
  
 
 TYPE:
@@ -1530,7 +1514,7 @@ EXAMPLE:
 
 
  
-66. SHOW SIGNOFF REPORTS
+## 66. SHOW SIGNOFF REPORTS
  
 
 TYPE:
@@ -1549,7 +1533,7 @@ EXAMPLE:
 
 
  
-67. SHOW SIGNOFF LOGS
+## 67. SHOW SIGNOFF LOGS
  
 
 TYPE:
@@ -1568,7 +1552,7 @@ EXAMPLE:
 
 
  
-68. SEARCH ERRORS
+## 68. SEARCH ERRORS
  
 
 TYPE:
@@ -1587,7 +1571,7 @@ EXAMPLE:
 
 
  
-69. SEARCH WARNINGS
+## 69. SEARCH WARNINGS
  
 
 TYPE:
@@ -1606,7 +1590,7 @@ EXAMPLE:
 
 
  
-70. CHECK FILE TYPES
+## 70. CHECK FILE TYPES
  
 
 RTL SOURCE:
@@ -1649,7 +1633,7 @@ LVS:
 
 
  
-71. IMPORTANT: WHERE EACH TYPE OF COMMAND IS RUN
+## 71. IMPORTANT: WHERE EACH TYPE OF COMMAND IS RUN
  
 
 HOST TERMINAL
@@ -1712,37 +1696,8 @@ Examples:
 These are NOT commands typed directly into the normal terminal
 unless they are being edited or sourced.
 
-
  
-72. RECOMMENDED GENERIC PROJECT STRUCTURE
- 
-
-<PROJECT>/
-
-    src/
-        RTL files
-
-    tb/
-        testbench files
-
-    config.tcl
-        OpenLane configuration
-
-    runs/
-        generated by OpenLane
-
-    docs/
-        project documentation
-
-    images/
-        screenshots
-
-    README.md
-        project documentation
-
-
- 
-73. RECOMMENDED RTL-TO-GDS CHECKLIST
+## 72. RECOMMENDED RTL-TO-GDS CHECKLIST
  
 
 1. Write RTL
@@ -1771,7 +1726,7 @@ unless they are being edited or sourced.
 
 
  
-74. GENERAL OPENROAD COMMANDS VERIFIED FOR YOUR BUILD
+## 73. GENERAL OPENROAD COMMANDS
  
 
 WORKING / USED:
@@ -1803,33 +1758,4 @@ WORKING / USED:
     gui::set_heatmap
     gui::dump_heatmap
 
-
- 
-75. COMMANDS NOT TO ASSUME FOR THIS BUILD
- 
-
-The following commands were NOT reliable/supported in the
-OpenROAD build used for this project:
-
-    get_db
-    get_clock
-    report_clocks
-    check_timing
-
-Also do not assume this works:
-
-    openroad -db <ODB>
-
-Instead use:
-
-    openroad -gui
-
-then inside OpenROAD:
-
-    read_db <ODB>
-
-
- 
-END OF COMMAND REFERENCE
- 
-
+## END OF COMMAND REFERENCE
